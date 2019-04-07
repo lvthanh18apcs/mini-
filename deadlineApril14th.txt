@@ -1,0 +1,23 @@
+excercise 1: insert a number x into an array of numbers
+input : 1 2 3 4 0
+	X : 5 
+	position : 2
+output: 1 5 2 3 4 
+exercise 2: remove a number 
+input : 1 2 3 4 0
+	position : 2
+output: 1 3 4
+excercise 3: remove the number X, if there is no X, print out there is no X
+input : 1 2 3 4 0
+	x : 1
+output 2 3 4
+input : 1 2 3 4 0
+	x : 5
+output: there is no X
+excercise 4: merge 2 acsending array into a new ascending array
+input : 1 2 5 9 0
+	3 4 7 12 0
+output: 1 2 3 4 5 7 9 12
+exercise 5: Fibonacci array 1 1 2 3 5 8 13 21 34 ...
+input : 8
+output: 21  
