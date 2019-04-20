@@ -1,0 +1,83 @@
+Question 1: closest prime number
+user input n is the number of integer numbers, and integer numbers, find the closest prime number
+if there are 2 answers, choose the smaller one
+
+input : 2 
+	6 14
+output: 5 13
+
+Question 2: prime sorting
+user input n is the number of integer numbers, and integer numbers, there are prime and not-prime numbers
+sort prime numbers in ascending order only
+
+input : 8
+	1 7 5 9 2 4 13 3
+output: 1 2 3 9 5 4 7 13
+
+Question 3: magic bricks
+given (n*(n+1))/2 bricks. each brick has a distinct value on it, build up a pyramid which has n base(s)
+and no brick's value in the lower base is smaller than any brick's value on the higher base
+i-th base will have (n-i+1) bricks
+
+input : 2
+	2 1 3
+output:   1
+	2 3
+input : 3
+	1 23 67 7 34 6
+output: 	1
+	     6  7
+	 23 34 67
+
+Question 4: Word's appearance
+given a string of words, each word is determined by a spacebar blank(' '), count word(s)' appearance
+print them out
+
+input : Tau Nhat Quang quaNg quang quang
+output: Tau : 1
+	Nhat: 1
+	Quang: 1
+	quaNg: 1
+	quang: 2
+
+Question 5: Queen's movement
+given nxn matrix, and the position of the queen in that matrix, find out where she cant move in just one move
+if there such no cell like that, output false, else output true and how many cells are there
+
+input:  2
+	1 1
+output: false
+
+input:  3
+	2 2
+output: false
+
+input:  3
+	1 1
+output: true 2
+
+Question 6: prison-break
+create a text file which has a password, a password should has 4 digits (from 0 to 9), every digit should be a distinct 
+digit, help a prisoner to break out by showing him a hint on the screen, the hint should be the sum and the
+result of the multiplication of these digits, prisoner has 10 chances to guess. either the chances are 
+over or he can unlock, stop the program and print out "UNLOCKED" if he can escape, "LOCKED" if he cant unlock
+into another text file, the display should follow this format
+
+Password: (prisoner type here) 
+
+Hint : 10 24 
+
+in file password.txt : 1234
+in file result.txt : (if he guessed the right password) UNLOCKED
+in file result.txt : (if he didnt make it) LOCKED
+
+Question 7: Prime Factorization
+
+input: 20
+output: 2^2 x 5
+
+input: 30
+output: 2 x 3 x 5
+
+- - - - END OF THE TEST - - - -
+	   GOOD LUCK
