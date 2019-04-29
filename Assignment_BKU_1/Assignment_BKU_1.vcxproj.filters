@@ -27,4 +27,9 @@
       <Filter>Header Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="Product.txt" />
+    <Text Include="Customer.txt" />
+    <Text Include="Transaction.txt" />
+  </ItemGroup>
 </Project>
