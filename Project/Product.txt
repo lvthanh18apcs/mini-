@@ -1,6 +1,6 @@
 5
 00000000
-Long-ranged rifle
+Recurved Bow
 MK24
 5
 100
@@ -15,7 +15,7 @@ BL981
 1
 300
 02020202
-Recurved Bow
+Long-ranged rifle
 XXX56
 1
 500
