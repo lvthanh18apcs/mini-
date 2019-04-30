@@ -1,4 +1,4 @@
-5
+8
 00000000
 Recurved Bow
 MK24
@@ -24,3 +24,18 @@ Magnopulser
 AG5
 1
 499
+12121212
+Liopleurodon
+FEROX
+3
+599
+78787878
+Tyrannosaurus
+REX
+5
+799
+36363636
+Panthera
+LEO
+2
+911
