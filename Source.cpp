@@ -1,105 +1,52 @@
-#include "Control.h"
+#include <iostream>
 
-void Color(int k)
+using namespace std;
+
+void sort(int *a, int n,int *b)
 {
-	HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hConsole, k);
-}
-
-void go(int column, int line)
-{
-	COORD coord;
-	coord.X = column;
-	coord.Y = line;
-	SetConsoleCursorPosition(
-		GetStdHandle(STD_OUTPUT_HANDLE),
-		coord
-	);
-}
-
-void Customer_Input(Customer *x)
-{
-
-	ifstream in;
-	in.open("Customer.txt");
-	int n;
-	in >> n;
-	x = new Customer[n];
-	for (int i = 0; i < n; ++i)
+	for (int i = 1; i < n; ++i)
 	{
-		in.get(x[i].ID, 8, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(x[i].name, 50, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(x[i].phone, 12, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(x[i].address, 200, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(x[i].city, 50, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(x[i].date, 10, '\n');
-		in.ignore(1000, '\n');
+		int j = i;
+		while (a[j] < a[j - 1] && j > 0)
+		{
+			int temp = a[j];
+			int camp = b[j];
+			a[j] = a[j - 1];
+			b[j] = b[j - 1];
+			a[j - 1] = temp;
+			b[j - 1] = camp;
+			--j;
+		}
 	}
-	in.close();
 }
-void Transaction_Input(Transaction *y)
+void sort2(int *c, int m)
 {
-	ifstream in;
-	in.open("Transaction.txt");
-	int n;
-	in >> n;
-	y = new Transaction[n];
-	for (int i = 0; i < n; ++i)
+	for (int i = 1; i < m; ++i)
 	{
-		in.get(y[i].ID, 8, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(y[i].cusID, 8, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(y[i].type, 6, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(y[i].IDP, 8, '\n');
-		in.ignore(1000, '\n');
-
-		in >> y[i].value;
-
-		in.get(y[i].date, 10, '\n');
-		in.ignore(1000, '\n');
+		int j = i;
+		while (c[j] < c[j - 1] && j > 0)
+		{
+			int temp = c[j];
+			c[j] = c[j - 1];
+			c[j - 1] = temp;
+			--j;
+		}
 	}
-	in.close();
 }
-void Product_Input(Product *z)
+
+
+
+int main()
 {
-	ifstream in;
-	in.open("Product.txt");
-	int n;
-	in >> n;
-	z = new Product[n];
-	for (int i = 0; i < n; ++i)
-	{
-		in.get(z[i].ID, 8, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(z[i].name, 100, '\n');
-		in.ignore(1000, '\n');
-
-		in.get(z[i].model, 100, '\n');
-		in.ignore(1000, '\n');
-
-		in >> z[i].quantity;
-
-		in >> z[i].price;
-
-
-	}
-	in.close();
+	int spot, stype, *damage, *strength, *damages;
+	cin >> spot;
+	damage = new int[spot];
+	for (int i = 0; i < spot; ++i) cin >> damage[i];
+	cin >> stype;
+	strength = new int[stype];
+	for (int i = 0; i < stype; ++i) cin >> strength[i];
+	delete[] damage;
+	delete[] strength;
+	system("pause");
+	return 0;
 }
-
-
