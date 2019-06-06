@@ -1,0 +1,5 @@
+ex1: given 2 numbers x and y randomly (x,y >0) from x to y, calculate summary of prime numbers
+
+ex2: given few numbers, count the appearance of each number
+
+ex3: given array of numbers, calculate sum of each digit of every number
